@@ -3,7 +3,6 @@
 // Pastikan fungsi hanya dideklarasikan jika belum ada
 if (!function_exists('formatTopicForFile')) {
     function formatTopicForFile($topic) {
-        $topic = basename($topic);
         return str_replace(' ', '-', strtolower($topic));
     }
 }
@@ -20,7 +19,12 @@ function generateRandomTitleAndDescription($topic) {
         '🌌',
         '🍀',
         '⚡',
-        '🔥',
+		'🔥',
+		'☄️',
+		'🌟',
+		'💰',
+		'🎰',
+        '💰',
         '🌟',
         '✨',
         '🎯',
@@ -48,7 +52,57 @@ function generateRandomTitleAndDescription($topic) {
         'Pusat Elit',
         'Gerbang Keunggulan',
         'Akses Galaksi',
-        'Zona Utama'
+        'Zona Utama',
+		'Puncak Kemenangan',
+        'Portal Kemenangan',
+        'Pusat Keberuntungan',
+        'Gerbang Impian',
+        'Jalan Menuju Kemenangan',
+        'Zona Kemenangan',
+        'Sumber Keberhasilan',
+        'Akses Sukses',
+        'Pintu Kesuksesan',
+        'Oasis Keberuntungan',
+        'Katalis Kemenangan',
+        'Dunia Keberuntungan',
+        'Pusat Jackpot',
+        'Ruang Kemenangan',
+        'Arena Keberuntungan',
+        'Portal Peluang',
+        'Kawasan Emas',
+        'Jalan Emas',
+        'Situs Kemenangan',
+        'Emporium Keberuntungan',
+        'Puncak Keberhasilan',
+        'Gerbang Keberhasilan',
+        'Tempat Legendaris',
+        'Pusat Slot',
+        'Jalan Menuju Jackpot',
+        'Koneksi Keberuntungan',
+        'Gerbang Keajaiban',
+        'Basis Kemenangan',
+        'Zona Premium',
+        'Kota Keberuntungan',
+        'Pintu Peluang',
+        'Gerbang Kesempatan',
+        'Portal Terbaik',
+        'Emporium Kemenangan',
+        'Pusat Sukses',
+        'Puncak Jackpot',
+        'Akses Kemenangan',
+        'Basis Elit',
+        'Zona Emas',
+        'Ruang Jackpot',
+        'Pintu Peluang Emas',
+        'Dunia Sukses',
+        'Tempat Kesuksesan',
+        'Pusat Strategi',
+        'Jalan Menuju Keberuntungan',
+        'Oasis Kemenangan',
+        'Gerbang Keberuntungan',
+        'Situs Utama',
+        'Portal Keberhasilan',
+        'Dunia Emas'
     ];
 
     $descriptors = [
@@ -71,7 +125,27 @@ function generateRandomTitleAndDescription($topic) {
         'Slot Paling Dicari',
         'Slot Nomor Satu',
         'Slot Super',
-        'Slot Eksklusif'
+        'Slot Eksklusif',
+		'Slot Jackpot',
+        'Slot Keberuntungan',
+        'Slot Kemenangan Besar',
+        'Slot Emas',
+        'Slot Ajaib',
+        'Slot Mewah',
+        'Slot Fantasi',
+        'Slot Menang Terus',
+        'Slot Bintang',
+        'Slot Berani Menang',
+        'Slot Penuh Kejutan',
+        'Slot Penuh Energi',
+        'Slot Bersinar',
+        'Slot Beruntung Setiap Hari',
+        'Slot Terbaik',
+        'Slot Pemburu Jackpot',
+        'Slot Sukses Gemilang',
+        'Slot Berkualitas',
+        'Slot Cemerlang',
+        'Slot Pemenang'
     ];
     
     $extras = [
@@ -98,7 +172,57 @@ function generateRandomTitleAndDescription($topic) {
         'Transaksi Lancar dan Cepat',
         'Kemenangan Setiap Hari',
         'Dijamin Aman 100%',
-        'Permainan Paling Populer'
+        'Permainan Paling Populer',
+		'Kemenangan Beruntun',
+        'Taruhan Cerdas, Hasil Besar',
+        'Peluang Menang Tiada Henti',
+        'Keberuntungan Menanti Anda',
+        'Bonus Spin Gratis Setiap Hari',
+        'RTP Tinggi untuk Kemenangan Maksimal',
+        'Dapatkan Kemenangan Fantastis',
+        'Slot Terpanas Saat Ini',
+        'Kemenangan Mega Menanti',
+        'Bermain dan Menang Besar',
+        'Keberuntungan Selalu Bersama Anda',
+        'Keuntungan Besar di Setiap Putaran',
+        'Jackpot Sehari-hari yang Menggoda',
+        'Keseruan Menang Tiada Henti',
+        'Nikmati Kemenangan Instan',
+        'Mainkan Slot Favorit Anda',
+        'Pengalaman Menang yang Mengasyikkan',
+        'Bonus Tambahan di Setiap Taruhan',
+        'Hadiah Mewah Setiap Minggu',
+        'Kemenangan Spektakuler Menanti Anda',
+        'Peluang Jackpot Menggiurkan',
+        'Berita Baik: Kemenangan Besar di Depan Mata',
+        'Slot dengan RTP Tertinggi',
+        'Kemenangan Besar di Ujung Jari Anda',
+        'Peluang Emas Setiap Saat',
+        'Jackpot yang Tidak Pernah Habis',
+        'Raih Kemenangan Sekarang',
+        'Permainan Penuh Kemenangan',
+        'Kejutan Kemenangan Tiap Putaran',
+        'Dapatkan Kemenangan Mega Hari Ini',
+        'Slot dengan Peluang Menang Tinggi',
+        'Serunya Menang Setiap Hari',
+        'Slot Berhadiah Besar',
+        'Bonus Melimpah untuk Semua Pemain',
+        'Kemenangan Tiada Tanding',
+        'Keberuntungan Ada di Sini',
+        'Dapatkan Kemenangan Spektakuler',
+        'Menang Besar di Setiap Putaran',
+        'Kemenangan Cepat, Tanpa Ribet',
+        'Momen Kemenangan Menyergap Anda',
+        'Dapatkan Jackpot Impian Anda',
+        'Putaran Menang yang Beruntun',
+        'Rasakan Keseruan Kemenangan Besar',
+        'Buka Peluang Menang yang Luas',
+        'Kemenangan Luar Biasa untuk Semua',
+        'Permainan yang Menghadiahkan Kemenangan',
+        'Jackpot Menunggu untuk Diambil',
+        'Selamat Datang di Dunia Kemenangan',
+        'Peluang Besar, Kemenangan Nyata',
+        'Nikmati Kemenangan Berlimpah Setiap Hari'
     ];
 
     $connectors = [
@@ -119,7 +243,36 @@ function generateRandomTitleAndDescription($topic) {
         'Fenomenal',
         'Elite',
         'Istimewa',
-        'Dahsyat'
+        'Dahsyat',
+		'Berkelas',
+        'Menggetarkan',
+        'Menyenangkan',
+        'Mempesona',
+        'Luar Biasa',
+        'Fantasi',
+        'Memukau',
+        'Menawan',
+        'Bergengsi',
+        'Keren',
+        'Ajaib',
+        'Glamor',
+        'Bersinar',
+        'Kemenangan',
+        'Sensasi',
+        'Menguntungkan',
+        'Premium',
+        'Megah',
+        'Spektakuler',
+        'Mewah',
+        'Sensasional',
+        'Kejutan',
+        'Brilian',
+        'Cuan',
+        'Eksklusif',
+        'Jackpot',
+        'Tak Terbatas',
+        'Sukses',
+        'Gemilang'
     ];
 
     $templates = [
@@ -177,7 +330,7 @@ foreach ($names as $index => $name) {
     $content = "";
 
     // Hasilkan 5 judul dan deskripsi
-    for ($i = 0; $i < 1; $i++) {
+    for ($i = 0; $i < 5; $i++) {
         $data = generateRandomTitleAndDescription($name);
         $title = $data['title'];
         $description = $data['description'];
@@ -188,12 +341,8 @@ foreach ($names as $index => $name) {
 
     // Buat nama file sesuai dengan nama dari data.txt tanpa angka
     $fileName = "data/{$data['formattedTopicForFile']}.txt";
-    $dirName = dirname($fileName);
-    if (!file_exists($dirName)) {
-        mkdir($dirName, 0777, true);
-    }
     file_put_contents($fileName, $content);
 
-    echo "Done $fileName\n";
+    echo "Judul dan deskripsi berhasil dibuat dan disimpan di $fileName\n";
 }
 ?>
